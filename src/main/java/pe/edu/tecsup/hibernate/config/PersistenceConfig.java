@@ -80,6 +80,8 @@ public class PersistenceConfig {
         prop.setProperty("hibernate.connection.useUnicode", "true");
         prop.setProperty("hibernate.connection.charSet", "UTF8");
 
+        prop.setProperty("hibernate.enable_lazy_load_no_trans", "true");
+        
         fb.setHibernateProperties(prop);
 
         return fb;
